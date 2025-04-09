@@ -1,0 +1,13 @@
+.card{
+    width: 75% !important;
+}
+
+table{
+    width: 50% !important;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}

@@ -3,9 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./base.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <title>JDMWiki</title>
 </head>
 <body>
-    <p>Hihi</p>
+    <div>
+      <img class="d-none d-md-block img w-100 header-pic" src="./media/pictures/small-header-pic.jpg" alt="Fejléc">
+    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">JDMWiki</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Főoldal</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Galéria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Visszajelzés</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Cards-->
+      <div class="d-flex justify-content-center">
+        <div class="card">
+            <img src="/media/pictures/godzilla/godzilla-homepage.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h2 class="card-title">Nissan Skyline R32 - „Godzilla”</h2>
+                <!--Text-->
+                <p class="card-text">A harmadik generációs Nissan Skyline R32 (1989–1994) a japán autóipar egyik meghatározó modellje, amely forradalmasította a sportautókat és világszerte kultikus státuszba emelkedett. A Nissan a versenysport ihlette technológiákkal vértezte fel az R32-t, különösen a GT-R változatot, amely a legendás RB26DETT 2.6 literes, sorhatos, duplaturbós motorral érkezett. Noha a hivatalos teljesítményadat a japán gyártók közötti megállapodás miatt 280 lóerő volt, a valós teljesítmény ennél magasabbra rúgott, és a motor nagy tuningpotenciállal bírt. Az ATTESA E-TS összkerékhajtási rendszer kiemelkedő tapadást biztosított, míg a Super-HICAS összkerék-kormányzás javította a kezelhetőséget, így az R32 rendkívül precíz és stabil autó volt, akár utcai, akár versenypályás körülmények között. A brutális gyorsulása és pályaképessége miatt az ausztrál sajtó "Godzilla" becenéven kezdte emlegetni – utalva arra, hogy a japán autóóriás dominanciát épített ki a motorsport világában.
+                    <br>A modell különösen a japán túraautó-bajnokságokban (JTCC és JGTC) vált legendává, ahol az R32 GT-R fölénye olyan mértékű volt, hogy végül szabályváltozásokat kellett bevezetni, hogy versenytársai egyáltalán eséllyel indulhassanak ellene. Az autó rendkívüli aerodinamikai hatékonysága és alacsony tömege (kb. 1.430 kg) hozzájárult kiváló teljesítményéhez, amelyet világszerte nagyra értékeltek az autórajongók és tunerek egyaránt. Az R32 nem csupán egy új korszak kezdetét jelentette a GT-R sorozat számára, hanem egy olyan mércét állított fel a teljesítményorientált japán sportautók világában, amelyet még ma is tisztelettel emlegetnek.
+                </p>
+                <!--Table-->
+                <div class="d-flex justify-content-center">
+                    <table class="table table-bordered align-middle">
+                        <caption>Az autó főbb adatai</caption>
+                        <tr>
+                            <td>Motor</td>
+                            <td>
+                            <ul>
+                                <li>Típus: 2.6 literes soros 6-hengeres, RB26DETT</li>
+                                <li>Lökettérfogat: 2,568 cm³</li>
+                                <li>Teljesítmény: 280 lóerő (Japán változat)</li>
+                                <li>Nyomaték: 353 Nm</li>
+                                <li>Maximum fordulat: 6,800 rpm</li>
+                            </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Váltó</td>
+                            <td>5 sebességes manuális</td>
+                        </tr>
+                        <tr>
+                            <td>Hajtás</td>
+                            <td>Összkerékhajtás (AWD)</td>
+                        </tr>
+                        <tr>
+                            <td>Tömeg</td>
+                            <td>1430 kg</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+      </div>
 </body>
 </html>
