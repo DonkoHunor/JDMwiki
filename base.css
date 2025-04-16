@@ -1,11 +1,46 @@
-/* Nav bar elemek */
-.in-nav > li{
-    margin-left: 3rem;
-    margin-right: 3rem;
+body {
+    background-color: rgb(7, 3, 43) !important;
+    font-size: large;
 }
 
+/* Nav bar elements */
+.nav-link{
+    color: white !important;
+    font-size: larger;
+    font-weight: bold;
+}
+
+@media (min-width: 992px) {
+    .nav-link{
+        background-color: rgb(248, 47, 47);
+        border-radius: 4rem;
+        padding-inline: 4rem !important;
+        margin-inline: 1rem;
+    }
+
+    .nav-link:hover{
+        color: rgb(248, 47, 47) !important;
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+.nav-link:hover{
+    color: rgb(248, 47, 47) !important;
+}
+
+.navbar-style {
+    background-color: rgba(0, 0, 0, 0.605) !important;
+    z-index: 1030 !important;
+    backdrop-filter: blur(4px);
+  }
+
+/* Cards */
 .card{
     width: 75% !important;
+    background-color: rgba(0, 0, 0, 0.173) !important;
+    color: white !important;
+    border-color: rgb(248, 47, 47);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
 }
 
 .card-img-top{
@@ -14,8 +49,22 @@
     object-fit: cover;
 }
 
+.card-title {
+    color: rgb(248, 47, 47) !important;
+}
+
 table{
-    width: 75% !important;
+    width: 75% !important;    
+}
+
+td, th, tr{
+    background-color: rgb(42, 40, 40) !important;
+    color: white !important;
+    border-color: rgb(248, 47, 47) !important;
+}
+
+caption {
+    color: rgba(255, 255, 255, 0.733);
 }
 
 /* Táblázaton belüli felsorolás */
