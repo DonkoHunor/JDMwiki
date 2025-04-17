@@ -1,0 +1,53 @@
+/* Cards */
+.card{
+    width: 75% !important;
+    background-color: rgba(0, 0, 0, 0.173) !important;
+    color: white !important;
+    border-color: rgb(248, 47, 47);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+.card-img-top{
+    max-height: 35rem;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-title {
+    color: rgb(248, 47, 47) !important;
+}
+
+table{
+    width: 75% !important;    
+}
+
+td, th, tr{
+    background-color: rgb(42, 40, 40) !important;
+    color: white !important;
+    border-color: rgb(248, 47, 47) !important;
+}
+
+caption {
+    color: rgba(255, 255, 255, 0.733);
+}
+
+/* List in table */
+.in-table{
+    list-style-type: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.btn:hover{
+    color: rgb(248, 47, 47) !important;
+    background-color: rgb(255, 255, 255);
+}
+
+.btn-next{
+    float: right;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+} 
