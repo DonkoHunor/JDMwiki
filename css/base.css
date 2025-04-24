@@ -1,7 +1,7 @@
 /* Custom font */
 @font-face {
     font-family: 'Reggae';
-    src: url(fonts/ReggaeOne-Regular.ttf);
+    src: url(../fonts/ReggaeOne-Regular.ttf);
 }
 
 body {

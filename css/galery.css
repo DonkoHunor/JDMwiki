@@ -29,3 +29,9 @@
     height: 100%;
     object-fit: cover;
 }
+
+.carousel-control-prev,
+.carousel-control-next{
+    max-width: 6rem;
+    background-color: rgba(0, 0, 0, 0.38) !important;
+}
