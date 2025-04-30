@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(7, 3, 43) !important;
+    background-image: url("../media/pictures/background.jpg");
     font-size: large;
 }
 
@@ -22,11 +22,11 @@ h2{
 }
 
 .active {
-    text-decoration: underline;
+    color: rgb(190, 186, 186) !important;
 }
 
 .nav-link{
-    color: white !important;
+    color: white;
     font-size: larger;
     font-weight: bold;
     font-family: 'Reggae';
@@ -70,3 +70,11 @@ h2{
     padding: 10px 14px;
     font-size: 1.2rem;
 } 
+
+footer{
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+}

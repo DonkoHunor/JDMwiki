@@ -8,8 +8,13 @@ form {
     padding: 1rem;
 }
 
-textarea {
+textarea.form-control {
     height: 15rem;
+    width: 37vw;
+}
+
+.form-control{
+    width: 25vw;
 }
 
 .btn-success{

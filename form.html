@@ -13,15 +13,18 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/form.css">
     <script src="./script/form.js"></script>
-    <title>JDMwiki-Visszajelzés</title>
+    <title>JDMwiki-Új autó</title>
 </head>
 
 <body>
-    <div>
-        <img class="d-none d-md-block img w-100 header-pic" src="./media/pictures/small-header-pic-dark.jpg"
-            alt="Fejléc">
-    </div>
+    <header>
+        <div>
+            <img class="d-none d-md-block img w-100 header-pic" src="./media/pictures/small-header-pic-dark.jpg"
+                alt="Fejléc kép">
+        </div>
+    </header>
     <!--Navbar-->
+    <a href="#title" hidden>Skip navigation</a>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-style navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,7 +32,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <h1 class="navbar-brand d-lg-none" href="#">
+            <h1 class="navbar-brand d-lg-none">
                 JDMwiki
             </h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,7 +54,7 @@
     <div class="m-4 d-flex justify-content-center">
         <div class="card">
             <div class="card-body">
-                <h2 class="card-title">
+                <h2 id="title" class="card-title">
                     Szeretnéd látni a te kedvenced a többi JDM legndáda között?
                 </h2>
                 <p class="card-text">
@@ -62,20 +65,20 @@
     </div>
     <!-- Form -->
     <div class="m-4 d-flex justify-content-center">
-        <form>
+        <form method="post">
             <div class="mb-3">
                 <label for="name" class="form-label">Az ön neve</label>
-                <input type="text" class="form-control" id="name">
+                <input type="text" class="form-control" id="name" maxlength="80">
                 <div class="form-check form-check-inline mt-2">
                     <input class="form-check-input" type="checkbox" name="nameCheck" id="nameCheck">
                     <label class="form-check-label" for="nameCheck">
-                        Anonim
+                        Név nélküli kitöltés
                     </label>
                 </div>
             </div>
             <div class="mb-3">
                 <label for="autoName" class="form-label">Az autó neve</label>
-                <input type="text" class="form-control" id="autoName">
+                <input type="text" class="form-control" id="autoName" maxlength="80">
             </div>
             <div class="mb-3">
                 <label for="description" class="form-label">Leírás</label>
@@ -98,25 +101,29 @@
             <div id="tableForm" class="mt-3">
                 <div class="mb-3">
                     <label for="engine" class="form-label">Motor</label>
-                    <input type="text" class="form-control" id="engine">
+                    <input type="text" class="form-control" id="engine" maxlength="80">
                 </div>
                 <div class="mb-3">
-                    <label for="engine" class="form-label">Váltó</label>
-                    <input type="text" class="form-control" id="engine">
+                    <label for="trans" class="form-label">Váltó</label>
+                    <input type="text" class="form-control" id="trans" maxlength="80">
                 </div>
                 <div class="mb-3">
-                    <label for="engine" class="form-label">Hajtás</label>
-                    <input type="text" class="form-control" id="engine">
+                    <label for="drive" class="form-label">Hajtás</label>
+                    <input type="text" class="form-control" id="drive" maxlength="80">
                 </div>
                 <div class="mb-3">
-                    <label for="engine" class="form-label">Tömeg (kg)</label>
-                    <input type="number" class="form-control" id="engine">
+                    <label for="weight" class="form-label">Tömeg (kg)</label>
+                    <input type="number" class="form-control" id="weight" max="10000">
                 </div>
             </div>
             <button class="btn btn-success" type="submit">Küldés</button>
             <button class="btn btn-danger" type="reset">Törlés</button>
         </form>
     </div>
+    <!-- Footer -->
+    <footer>
+        Készítette: Donkó Hunor Attila
+    </footer>
 </body>
 
 </html>

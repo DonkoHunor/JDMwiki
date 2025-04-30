@@ -12,14 +12,18 @@
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/home.css">
-    <title>JDMwiki</title>
+    <title>JDMwiki-Nyitóoldal</title>
 </head>
 
 <body>
-    <div>
-        <img class="d-none d-md-block img w-100 header-pic" src="./media/pictures/small-header-pic-dark.jpg" alt="Fejléc">
-    </div>
+    <header>
+        <div>
+            <img class="d-none d-md-block img w-100 header-pic" src="./media/pictures/small-header-pic-dark.jpg"
+                alt="Fejléc kép">
+        </div>
+    </header>
     <!--Navbar-->
+    <a href="#r34" hidden>Skip navigation</a>
     <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top navbar-style navbar-dark">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -27,7 +31,7 @@
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <h1 class="navbar-brand d-lg-none" href="#">
+            <h1 class="navbar-brand d-lg-none">
                 JDMwiki
             </h1>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -46,6 +50,7 @@
         </div>
     </nav>
     <!-- Bevezető -->
+
     <div class="m-4 d-flex justify-content-center">
         <div class="card">
             <div class="card-body">
@@ -53,39 +58,59 @@
                     Mi a JDM?
                 </h2>
                 <p class="card-text">
-                    JDM autók (Japanese Domestic Market) olyan japán gyártású járművek, amelyeket eredetileg a japán
-                    belpiacra terveztek és forgalmaztak. Ezek az autók gyakran eltérnek az exportált verzióktól specifikációik,
-                    teljesítményük és felszereltségük tekintetében, és világszerte népszerűek a tuning- és autókedvelők körében.
+                    JDM autók (<span lang="en">Japanese Domestic Market</span>) olyan japán gyártású járművek, amelyeket
+                    eredetileg a japán
+                    belpiacra terveztek és forgalmaztak. Ezek az autók gyakran eltérnek az exportált verzióktól
+                    specifikációik,
+                    teljesítményük és felszereltségük tekintetében, és világszerte népszerűek a tuning- és
+                    autókedvelők körében.
                 </p>
             </div>
         </div>
     </div>
+    <!-- Crads -->
     <!--R34 Card-->
     <div id="r34" class="m-4 d-flex justify-content-center">
         <div class="card">
-            <img src="/media/pictures/godzilla/godzilla-homepage.jpg" class="card-img-top" alt="...">
+            <figure>
+                <img src="./media/pictures/godzilla/godzilla-homepage.jpg" class="card-img-top"
+                    alt="Nissan Skyline R34">
+            </figure>
             <div class="card-body">
-                <h2 class="card-title">Nissan Skyline R32 - „Godzilla”</h2>
-                <!--Text-->
-                <p class="card-text">
-                    A harmadik generációs Nissan Skyline R32 (1989–1994) a japán autóipar egyik meghatározó modellje,
-                    amely forradalmasította a sportautókat és világszerte kultikus státuszba emelkedett. A Nissan a
-                    versenysport ihlette technológiákkal vértezte fel az R32-t, különösen a GT-R változatot, amely a
-                    legendás RB26DETT 2.6 literes, sorhatos, duplaturbós motorral érkezett. Noha a hivatalos
-                    teljesítményadat a japán gyártók közötti megállapodás miatt 280 lóerő volt, a valós teljesítmény
-                    ennél magasabbra rúgott, és a motor nagy tuningpotenciállal bírt. Az ATTESA E-TS összkerékhajtási
-                    rendszer kiemelkedő tapadást biztosított, míg a Super-HICAS összkerék-kormányzás javította a
-                    kezelhetőséget, így az R32 rendkívül precíz és stabil autó volt, akár utcai, akár versenypályás
-                    körülmények között. A brutális gyorsulása és pályaképessége miatt az ausztrál sajtó "Godzilla"
-                    becenéven kezdte emlegetni – utalva arra, hogy a japán autóóriás dominanciát épített ki a motorsport
-                    világában.
-                </p>
+                <article>
+                    <h2 class="card-title">Nissan Skyline R32 - „Godzilla”</h2>
+                    <!--Text-->
+                    <p class="card-text">
+                        A harmadik generációs Nissan Skyline R32 (1989–1994) a japán autóipar egyik meghatározó
+                        modellje,
+                        amely forradalmasította a sportautókat és világszerte kultikus státuszba emelkedett. A Nissan a
+                        versenysport ihlette technológiákkal vértezte fel az R32-t, különösen a GT-R változatot, amely a
+                        legendás RB26DETT 2.6 literes, sorhatos, duplaturbós motorral érkezett. Noha a hivatalos
+                        teljesítményadat a japán gyártók közötti megállapodás miatt 280 lóerő volt, a valós teljesítmény
+                        ennél magasabbra rúgott, és a motor nagy tuningpotenciállal bírt. Az ATTESA E-TS
+                        összkerékhajtási
+                        rendszer kiemelkedő tapadást biztosított, míg a Super-HICAS összkerék-kormányzás javította a
+                        kezelhetőséget, így az R32 rendkívül precíz és stabil autó volt, akár utcai, akár versenypályás
+                        körülmények között. A brutális gyorsulása és pályaképessége miatt az ausztrál sajtó "Godzilla"
+                        becenéven kezdte emlegetni – utalva arra, hogy a japán autóóriás dominanciát épített ki a
+                        motorsport
+                        világában.
+                    </p>
+                </article>
                 <!--Table-->
                 <div class="d-flex justify-content-center container-fluid">
                     <table class="table table-bordered align-middle">
-                        <caption>Az autó főbb adatai</caption>
+                        <caption>Az autó főbb adatai
+                            <details>
+                                <summary class="fw-bold">További információ</summary>
+                                <p>
+                                    Adatok az autó motorjáról, tejesítményéről, nyomatékjáról és maximális
+                                    fordulatszámáról
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
-                            <th>Motor</th>
+                            <th scope="row">Motor</th>
                             <td>
                                 <ul class="in-table">
                                     <li>Típus:&nbsp;&nbsp; 2.6 literes soros 6-hengeres, RB26DETT</li>
@@ -96,24 +121,28 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Váltó</th>
+                            <th scope="row">Váltó</th>
                             <td>5 sebességes manuális</td>
                         </tr>
                         <tr>
-                            <th>Hajtás</th>
+                            <th scope="row">Hajtás</th>
                             <td>Összkerékhajtás (AWD)</td>
                         </tr>
                         <tr>
-                            <th>Tömeg</th>
+                            <th scope="row">Tömeg</th>
                             <td>1430 kg</td>
                         </tr>
                     </table>
                 </div>
+                <!-- More Text -->
                 <p class="card-text">
-                    A modell különösen a japán túraautó-bajnokságokban (JTCC és JGTC) vált legendává, ahol az R32 GT-R
+                    A modell különösen a japán túraautó-bajnokságokban (JTCC és JGTC) vált legendává, ahol az R32
+                    GT-R
                     fölénye olyan mértékű volt, hogy végül szabályváltozásokat kellett bevezetni, hogy versenytársai
-                    egyáltalán eséllyel indulhassanak ellene. Az autó rendkívüli aerodinamikai hatékonysága és alacsony
-                    tömege (kb. 1.430 kg) hozzájárult kiváló teljesítményéhez, amelyet világszerte nagyra értékeltek az
+                    egyáltalán eséllyel indulhassanak ellene. Az autó rendkívüli aerodinamikai hatékonysága és
+                    alacsony
+                    tömege (kb. 1.430 kg) hozzájárult kiváló teljesítményéhez, amelyet világszerte nagyra értékeltek
+                    az
                     autórajongók és tunerek egyaránt. Az R32 nem csupán egy új korszak kezdetét jelentette a GT-R
                     sorozat számára, hanem egy olyan mércét állított fel a teljesítményorientált japán sportautók
                     világában, amelyet még ma is tisztelettel emlegetnek.
@@ -121,42 +150,59 @@
                 <!-- Nav btns -->
                 <a href="#" class="btn btn-danger">
                     <i class="bi bi-arrow-left"></i> Előző
-                </a>                                    
+                </a>
                 <a href="#rx7" class="btn btn-danger btn-next">
                     Következő <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
     </div>
+
     <!-- RX7 Card -->
     <div id="rx7" class="m-4 d-flex justify-content-center">
         <div class="card">
-            <img src="/media/pictures/rx7/rx7-homepage.jpg" class="card-img-top" alt="...">
+            <figure>
+                <img src="./media/pictures/rx7/rx7-homepage.jpg" class="card-img-top" alt="Mazda RX7">
+            </figure>
             <div class="card-body">
-                <h2 class="card-title">Mazda RX-7 (FD)</h2>
-                <!--Text-->
-                <p class="card-text">
-                    A Mazda RX-7 FD (1992–2002) a japán sportautó-gyártás egyik ikonja, amely a könnyűsúlyú konstrukció,
-                    a kifinomult futómű és a forradalmi Wankel-rotormotor tökéletes egyensúlyát kínálta. Az FD
-                    generációt egy 1.3 literes, duplaturbós 13B-REW motor hajtotta, amely 255–280 lóerő közötti
-                    teljesítményt nyújtott, a későbbi változatokban pedig még erősebb konfigurációk is megjelentek. Az
-                    autó különlegessége a Sequential Twin-Turbo rendszer volt, amely kis fordulatszámon egy kisebb
-                    turbót, magasabb tartományban pedig egy nagyobb turbót kapcsolt be, biztosítva a folyamatos
-                    teljesítményleadást. Az FD RX-7 alacsony súlypontjával, hátsókerék-hajtásával és kiváló
-                    súlyelosztásával a vezetési élmény egyik etalonjává vált. Nem véletlen, hogy az autós kultúrában,
-                    filmekben és videojátékokban is állandó szereplővé vált, és a drift- valamint tuningvilág egyik
-                    kedvence lett.
-                </p>
+                <article>
+                    <h2 class="card-title">Mazda RX-7 (FD)</h2>
+                    <!--Text-->
+                    <p class="card-text">
+                        A Mazda RX-7 FD (1992–2002) a japán sportautó-gyártás egyik ikonja, amely a könnyűsúlyú
+                        konstrukció,
+                        a kifinomult futómű és a forradalmi Wankel-rotormotor tökéletes egyensúlyát kínálta. Az FD
+                        generációt egy 1.3 literes, duplaturbós 13B-REW motor hajtotta, amely 255–280 lóerő közötti
+                        teljesítményt nyújtott, a későbbi változatokban pedig még erősebb konfigurációk is megjelentek.
+                        Az
+                        autó különlegessége a Sequential Twin-Turbo rendszer volt, amely kis fordulatszámon egy kisebb
+                        turbót, magasabb tartományban pedig egy nagyobb turbót kapcsolt be, biztosítva a folyamatos
+                        teljesítményleadást. Az FD RX-7 alacsony súlypontjával, hátsókerék-hajtásával és kiváló
+                        súlyelosztásával a vezetési élmény egyik etalonjává vált. Nem véletlen, hogy az autós
+                        kultúrában,
+                        filmekben és videojátékokban is állandó szereplővé vált, és a drift- valamint tuningvilág egyik
+                        kedvence lett.
+                    </p>
+                </article>
                 <!--Table-->
                 <div class="d-flex justify-content-center container-fluid">
                     <table class="table table-bordered align-middle">
-                        <caption>Az autó főbb adatai</caption>
+                        <caption>Az autó főbb adatai
+                            <details>
+                                <summary class="fw-bold">További információ</summary>
+                                <p>
+                                    Adatok az autó motorjáról, tejesítményéről, nyomatékjáról és maximális
+                                    fordulatszámáról
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
                             <th>Motor</th>
                             <td>
                                 <ul class="in-table">
                                     <li>Típus:&nbsp;&nbsp; 1.3 literes Wankel-rotormotor, 13B-REW</li>
-                                    <li>Teljesítmény:&nbsp;&nbsp; 255 lóerő (Japán), 280 lóerő (export változatok)</li>
+                                    <li>Teljesítmény:&nbsp;&nbsp; 255 lóerő (Japán), 280 lóerő (export változatok)
+                                    </li>
                                     <li>Nyomaték:&nbsp;&nbsp; 294 Nm</li>
                                     <li>Maximum fordulat:&nbsp;&nbsp; 8,000 rpm</li>
                                 </ul>
@@ -176,55 +222,78 @@
                         </tr>
                     </table>
                 </div>
+                <!-- More Text -->
                 <p class="card-text">
                     A Mazda mérnökei az RX-7 FD fejlesztésekor a lehető legjobb teljesítmény-súly arány elérésére
                     törekedtek, ezért az autó tömege mindössze 1.250 kg körül mozgott, ami a könnyű
-                    alumíniumszerkezeteknek és minimalista dizájnnak volt köszönhető. A gondosan hangolt felfüggesztés
+                    alumíniumszerkezeteknek és minimalista dizájnnak volt köszönhető. A gondosan hangolt
+                    felfüggesztés
                     és az aerodinamikailag optimalizált karosszéria kiemelkedő kezelhetőséget biztosított, amely a
                     pályán és az utcán egyaránt élvezetes vezetési élményt nyújtott. Bár a Wankel-motor híresen
                     karbantartásigényes volt, egy megfelelően gondozott példány még ma is lenyűgöző teljesítményre
                     képes. Az RX-7 FD a motorsportban is sikeres volt, különösen a Super GT és az IMSA
                     versenysorozatokban. Az egyedi megjelenés, a kiemelkedő vezethetőség és a kompromisszummentes
-                    mérnöki munka miatt az RX-7 FD máig az egyik legnagyobb tiszteletnek örvendő japán sportautó, amely
-                    az autós közösségekben igazi legendának számít.
+                    mérnöki munka miatt az RX-7 FD máig az egyik legnagyobb tiszteletnek örvendő japán sportautó,
+                    amely
+                    az autós közösségekben igazi legendának számít. <a class="outsideLink"
+                        href="https://en.wikipedia.org/wiki/Mazda_RX-7" target="_blank">&lt;&lt;Mégtöbb&gt;&gt;</a>
                 </p>
                 <!-- Nav btns -->
                 <a href="#r34" class="btn btn-danger">
                     <i class="bi bi-arrow-left"></i> Előző
-                </a>                                    
+                </a>
                 <a href="#supra" class="btn btn-danger btn-next">
                     Következő <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
     </div>
+
     <!-- Supra Card -->
+
     <div id="supra" class="m-4 d-flex justify-content-center">
         <div class="card">
-            <img src="/media/pictures/supra/supra-homepage.jpg" class="card-img-top" alt="...">
+            <figure>
+                <img src="./media/pictures/supra/supra-homepage.jpg" class="card-img-top" alt="Toyota Supra MK4">
+            </figure>
             <div class="card-body">
-                <h2 class="card-title">Toyota Supra MK4</h2>
-                <!--Text-->
-                <p class="card-text">
-                    A Toyota Supra MK4 (A80, 1993–2002) a japán sportautó-gyártás egyik legismertebb modellje, amelyet a
-                    kiemelkedő teljesítménye, időtálló dizájnja és hatalmas tuningpotenciálja tett legendássá. Az autó
-                    szíve a híres 2JZ-GTE motor, egy 3.0 literes, sorhatos, duplaturbós erőforrás, amely Japánban
-                    hivatalosan 280 lóerőt teljesített, míg az exportváltozatok akár 330 lóerőt is produkáltak. A 6
-                    sebességes Getrag V160 manuális váltó és a hátsókerék-hajtás tökéletes kombinációt alkotott, amely
-                    kivételes gyorsulást és dinamikus vezetési élményt biztosított. Az MK4 Supra nemcsak a
-                    teljesítményével, hanem futurisztikus formavilágával is hódított: a letisztult vonalak, a masszív
-                    hátsó szárny és az agresszív orrkialakítás azonnal felismerhetővé tette.
-                </p>
+                <article>
+                    <h2 class="card-title">Toyota Supra MK4</h2>
+                    <!--Text-->
+                    <p class="card-text">
+                        A Toyota Supra MK4 (A80, 1993–2002) a japán sportautó-gyártás egyik legismertebb modellje,
+                        amelyet a
+                        kiemelkedő teljesítménye, időtálló dizájnja és hatalmas tuningpotenciálja tett legendássá. Az
+                        autó
+                        szíve a híres 2JZ-GTE motor, egy 3.0 literes, sorhatos, duplaturbós erőforrás, amely Japánban
+                        hivatalosan 280 lóerőt teljesített, míg az exportváltozatok akár 330 lóerőt is produkáltak. A 6
+                        sebességes Getrag V160 manuális váltó és a hátsókerék-hajtás tökéletes kombinációt alkotott,
+                        amely
+                        kivételes gyorsulást és dinamikus vezetési élményt biztosított. Az MK4 Supra nemcsak a
+                        teljesítményével, hanem futurisztikus formavilágával is hódított: a letisztult vonalak, a
+                        masszív
+                        hátsó szárny és az agresszív orrkialakítás azonnal felismerhetővé tette.
+                    </p>
+                </article>
                 <!--Table-->
                 <div class="d-flex justify-content-center container-fluid">
                     <table class="table table-bordered align-middle">
-                        <caption>Az autó főbb adatai</caption>
+                        <caption>Az autó főbb adatai
+                            <details>
+                                <summary class="fw-bold">További információ</summary>
+                                <p>
+                                    Adatok az autó motorjáról, tejesítményéről, nyomatékjáról és maximális
+                                    fordulatszámáról
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
                             <th>Motor</th>
                             <td>
                                 <ul class="in-table">
                                     <li>Típus:&nbsp;&nbsp; 3.0 literes soros 6-hengeres, 2JZ-GTE</li>
-                                    <li>Teljesítmény:&nbsp;&nbsp; 280 lóerő (Japán), 330 lóerő (export változatok)</li>
+                                    <li>Teljesítmény:&nbsp;&nbsp; 280 lóerő (Japán), 330 lóerő (export változatok)
+                                    </li>
                                     <li>Nyomaték:&nbsp;&nbsp; 318 Nm</li>
                                     <li>Maximum fordulat:&nbsp;&nbsp; 6,200 rpm</li>
                                 </ul>
@@ -244,49 +313,74 @@
                         </tr>
                     </table>
                 </div>
+                <!-- More Text -->
                 <p class="card-text">
                     A Supra MK4 a motorsportban és az utcai autós kultúrában egyaránt maradandót alkotott. Az
                     alapkivitelben is robusztus 2JZ-blokk extrém tuningpotenciállal rendelkezett, így számos épített
                     példány elérte vagy meghaladta az 1000 lóerős teljesítményt. Az autó népszerűsége ugrásszerűen
                     megnőtt a 2000-es évek elején, köszönhetően a Halálos Iramban filmsorozatnak, amely világszerte
-                    autós ikonként mutatta be a Suprát. Bár a modell gyártása 2002-ben befejeződött, öröksége tovább él
-                    az autós közösségekben, és az A80-as generáció a mai napig az egyik legkeresettebb japán sportautó.
-                    A kiemelkedő teljesítmény, a legendás megbízhatóság és az egyedülálló tuningpotenciál miatt az MK4
-                    Supra egy valódi JDM ikon, amely generációkon átívelően inspirálja az autórajongókat.
+                    autós ikonként mutatta be a Suprát. Bár a modell gyártása 2002-ben befejeződött, öröksége tovább
+                    él
+                    az autós közösségekben, és az A80-as generáció a mai napig az egyik legkeresettebb japán
+                    sportautó.
+                    A kiemelkedő teljesítmény, a legendás megbízhatóság és az egyedülálló tuningpotenciál miatt az
+                    MK4
+                    Supra egy valódi JDM ikon, amely generációkon átívelően inspirálja az autórajongókat. <a
+                        class="outsideLink" href="https://en.wikipedia.org/wiki/Toyota_Supra"
+                        target="_blank">&lt;&lt;Mégtöbb&gt;&gt;</a>
                 </p>
                 <!-- Nav btns -->
                 <a href="#rx7" class="btn btn-danger">
                     <i class="bi bi-arrow-left"></i> Előző
-                </a>                                    
+                </a>
                 <a href="#nsx" class="btn btn-danger btn-next">
                     Következő <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
     </div>
+
     <!-- NSX Card -->
+
     <div id="nsx" class="m-4 d-flex justify-content-center">
         <div class="card">
-            <img src="/media/pictures/nsx/nsx-homepage.jpg" class="card-img-top" alt="...">
+            <figure>
+                <img src="./media/pictures/nsx/nsx-homepage.jpg" class="card-img-top" alt="Honda NSX">
+            </figure>
             <div class="card-body">
-                <h2 class="card-title">Honda NSX – „A japán Ferrari”</h2>
-                <!--Text-->
-                <p class="card-text">
-                    A Honda NSX (NA1/NA2) (1990–2005) a japán szupersportautó-építés egyik mérföldköve, amely a Ferrari
-                    és a Lamborghini stílusában készült, de mindezt a japán precizitással és megbízhatósággal ötvözi. Az
-                    autó gyakran emlegetett „japán Ferrari” beceneve is abból ered, hogy teljesítménye és dizájnja
-                    egyaránt felvette a versenyt a legjobb európai modellekkel. Az NSX szíve a 3.0 literes V6-os motor,
-                    amely az i-VTEC szelepvezérléssel és egyedülálló twin-scroll turbó rendszerrel biztosította a
-                    folyamatosan növekvő teljesítményt. A modell különlegessége az is, hogy alumínium karosszériát
-                    használtak, amely rendkívül könnyűvé és erőssé tette az autót, miközben a vezetési élményt és a
-                    dinamikát jelentősen fokozta. Az NSX külső dizájnja egyszerre elegáns és agresszív, a formák tiszta
-                    vonalvezetésével és aerodinamikai finomhangolásával, amely az autó nagy sebességű stabilitását is
-                    biztosította.
-                </p>
+                <article>
+                    <h2 class="card-title">Honda NSX – „A japán Ferrari”</h2>
+                    <!--Text-->
+                    <p class="card-text">
+                        A Honda NSX (NA1/NA2) (1990–2005) a japán szupersportautó-építés egyik mérföldköve, amely a
+                        Ferrari
+                        és a Lamborghini stílusában készült, de mindezt a japán precizitással és megbízhatósággal
+                        ötvözi. Az
+                        autó gyakran emlegetett „japán Ferrari” beceneve is abból ered, hogy teljesítménye és dizájnja
+                        egyaránt felvette a versenyt a legjobb európai modellekkel. Az NSX szíve a 3.0 literes V6-os
+                        motor,
+                        amely az i-VTEC szelepvezérléssel és egyedülálló twin-scroll turbó rendszerrel biztosította a
+                        folyamatosan növekvő teljesítményt. A modell különlegessége az is, hogy alumínium karosszériát
+                        használtak, amely rendkívül könnyűvé és erőssé tette az autót, miközben a vezetési élményt és a
+                        dinamikát jelentősen fokozta. Az NSX külső dizájnja egyszerre elegáns és agresszív, a formák
+                        tiszta
+                        vonalvezetésével és aerodinamikai finomhangolásával, amely az autó nagy sebességű stabilitását
+                        is
+                        biztosította.
+                    </p>
+                </article>
                 <!--Table-->
                 <div class="d-flex justify-content-center container-fluid">
                     <table class="table table-bordered align-middle">
-                        <caption>Az autó főbb adatai</caption>
+                        <caption>Az autó főbb adatai
+                            <details>
+                                <summary class="fw-bold">További információ</summary>
+                                <p>
+                                    Adatok az autó motorjáról, tejesítményéről, nyomatékjáról és maximális
+                                    fordulatszámáról
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
                             <th>Motor</th>
                             <td>
@@ -312,54 +406,80 @@
                         </tr>
                     </table>
                 </div>
+                <!-- More Text -->
                 <p class="card-text">
                     Az NSX első generációja az Honda mérnökeinek egyik legnagyobb eredménye, amely egyedülállóan
-                    kombinálja a mindennapi használhatóságot a szupersportautókra jellemző kiemelkedő teljesítménnyel. A
-                    híres F1-es pilóta, Ayrton Senna is segített a fejlesztésben, hiszen az NSX az ő közreműködésével
-                    lett igazán pályára optimalizált, így minden apró részlet a vezethetőség és a kezelhetőség javítását
+                    kombinálja a mindennapi használhatóságot a szupersportautókra jellemző kiemelkedő
+                    teljesítménnyel. A
+                    híres F1-es pilóta, Ayrton Senna is segített a fejlesztésben, hiszen az NSX az ő
+                    közreműködésével
+                    lett igazán pályára optimalizált, így minden apró részlet a vezethetőség és a kezelhetőség
+                    javítását
                     szolgálta. Az autó a korai teszteléseken kiemelkedő eredményeket mutatott, és hamarosan a
                     motorsportok világában is jelentős szereplővé vált. Az NSX hírneve azóta is töretlen, és bár a
-                    gyártása 2005-ben véget ért, máig a japán autóépítés csúcsának számít, amit az újabb generációk is
-                    tisztelettel emlegetnek.
+                    gyártása 2005-ben véget ért, máig a japán autóépítés csúcsának számít, amit az újabb generációk
+                    is
+                    tisztelettel emlegetnek. <a href="https://en.wikipedia.org/wiki/Honda_NSX" class="outsideLink"
+                        target="_blank">&lt;&lt;Mégtöbb&gt;&gt;</a>
                 </p>
                 <!-- Nav btns -->
                 <a href="#supra" class="btn btn-danger">
                     <i class="bi bi-arrow-left"></i> Előző
-                </a>                                    
+                </a>
                 <a href="#evo" class="btn btn-danger btn-next">
                     Következő <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
     </div>
+
     <!-- Evo Card -->
+
     <div id="evo" class="m-4 d-flex justify-content-center">
         <div class="card">
-            <img src="/media/pictures/evo/evo-homepage.jpg" class="card-img-top" alt="...">
+            <figure>
+                <img src="./media/pictures/evo/evo-homepage.jpg" class="card-img-top" alt="Mitsubishi Lancer Evolution">
+            </figure>
             <div class="card-body">
-                <h2 class="card-title">Mitsubishi Lancer Evolution IV</h2>
-                <!--Text-->
-                <p class="card-text">
-                    A Mitsubishi Lancer Evolution egy legendás japán sportautó-sorozat, amely a ralisport iránti
-                    elkötelezettségét és a precíz mérnöki tervezést ötvözi. Az Evo VI (1999–2001) a sorozat egyik
-                    legismertebb és legkedveltebb változata, és az Evo-ok királyaként tartják számon, különösen a rali
-                    rajongók körében. Az Evo VI az előző generációkhoz hasonlóan egy 2.0 literes turbós 4-hengeres
-                    motorral rendelkezett, amely a Mitsubishi híres 4G63T motorjából származott. Az autó teljesítménye
-                    körülbelül 280 lóerő, és 392 Nm nyomatékkal rendelkezett, amely lehetővé tette a 0–100 km/h
-                    gyorsulást mindössze 5 másodperc alatt.
-                </p>
-                <p class="card-text">
-                    A 4WD (összkerékhajtás) rendszer és az átdolgozott felfüggesztés biztosította, hogy az autó minden
-                    helyzetben kiváló kezelhetőséggel rendelkezzen, legyen szó aszfaltról vagy havas-rali pályáról. Az
-                    Evo VI karakterisztikája a dinamikus vezetési élményt és a kimagasló tapadást biztosította, amit a
-                    motorsportok iránti rajongók és a tuning közösség is nagyra értékelt. A 5 sebességes manuális váltó
-                    segítségével a vezető szoros kapcsolatban maradhatott az autó teljesítményével, míg az Ralliart
-                    fejlesztette felfüggesztés és a Recaro ülések extra sportos élményt biztosítottak.
-                </p>
+                <article>
+                    <h2 class="card-title">Mitsubishi Lancer Evolution IV</h2>
+                    <!--Text-->
+                    <p class="card-text">
+                        A Mitsubishi Lancer Evolution egy legendás japán sportautó-sorozat, amely a ralisport iránti
+                        elkötelezettségét és a precíz mérnöki tervezést ötvözi. Az Evo VI (1999–2001) a sorozat egyik
+                        legismertebb és legkedveltebb változata, és az Evo-ok királyaként tartják számon, különösen a
+                        rali
+                        rajongók körében. Az Evo VI az előző generációkhoz hasonlóan egy 2.0 literes turbós 4-hengeres
+                        motorral rendelkezett, amely a Mitsubishi híres 4G63T motorjából származott. Az autó
+                        teljesítménye
+                        körülbelül 280 lóerő, és 392 Nm nyomatékkal rendelkezett, amely lehetővé tette a 0–100 km/h
+                        gyorsulást mindössze 5 másodperc alatt.
+                    </p>
+                    <p class="card-text">
+                        A 4WD (összkerékhajtás) rendszer és az átdolgozott felfüggesztés biztosította, hogy az autó
+                        minden
+                        helyzetben kiváló kezelhetőséggel rendelkezzen, legyen szó aszfaltról vagy havas-rali pályáról.
+                        Az
+                        Evo VI karakterisztikája a dinamikus vezetési élményt és a kimagasló tapadást biztosította, amit
+                        a
+                        motorsportok iránti rajongók és a tuning közösség is nagyra értékelt. A 5 sebességes manuális
+                        váltó
+                        segítségével a vezető szoros kapcsolatban maradhatott az autó teljesítményével, míg az Ralliart
+                        fejlesztette felfüggesztés és a Recaro ülések extra sportos élményt biztosítottak.
+                    </p>
+                </article>
                 <!--Table-->
                 <div class="d-flex justify-content-center container-fluid">
                     <table class="table table-bordered align-middle">
-                        <caption>Az autó főbb adatai</caption>
+                        <caption>Az autó főbb adatai
+                            <details>
+                                <summary class="fw-bold">További információ</summary>
+                                <p>
+                                    Adatok az autó motorjáról, tejesítményéről, nyomatékjáról és maximális
+                                    fordulatszámáról
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
                             <th>Motor</th>
                             <td>
@@ -385,6 +505,7 @@
                         </tr>
                     </table>
                 </div>
+                <!-- More Text -->
                 <p class="card-text">
                     Az Evo VI a rali világában komoly sikereket ért el, és több, mint 20 éves múltja alatt a japán
                     autósport ikonikus figurájává vált. A modell különösen a WRC-ben való szereplésével, valamint az
@@ -395,42 +516,63 @@
                 <!-- Nav btns -->
                 <a href="#nsx" class="btn btn-danger">
                     <i class="bi bi-arrow-left"></i> Előző
-                </a>                                    
+                </a>
                 <a href="#subaru" class="btn btn-danger btn-next">
                     Következő <i class="bi bi-arrow-right"></i>
                 </a>
             </div>
         </div>
     </div>
+
     <!-- Subaru Card -->
+
     <div id="subaru" class="m-4 d-flex justify-content-center">
         <div class="card">
-            <img src="/media/pictures/wrx/wrx-homepage.jpg" class="card-img-top" alt="...">
+            <figure>
+                <img src="./media/pictures/wrx/wrx-homepage.jpg" class="card-img-top" alt="Subaru Impreza WRX">
+            </figure>
             <div class="card-body">
-                <h2 class="card-title">Subaru Impreza WRX STI(GC8)</h2>
-                <!--Text-->
-                <p class="card-text">
-                    A Subaru Impreza WRX STI (GC8) egy másik kultikus JDM modell, amely szintén kiemelkedő szereplője
-                    volt a ralisportnak és a japán autók szerelmeseinek. Az Impreza WRX STI a 1992-es debütálás után
-                    vált világszerte ismertté, és az 1990-es évek végén és 2000-es évek elején a rali világbajnokság
-                    egyik meghatározó szereplőjévé vált. A GC8 változat különösen az STI verziójával vált legendássá,
-                    amely rendkívüli összkerékhajtású rendszerével és az erőteljes motorral igazi ralisport-élményt
-                    nyújtott. Az autó szívét egy 2.0 literes turbós 4-hengeres motor adta, amely körülbelül 280 lóerőt
-                    és 353 Nm nyomatékot biztosított, így a 0-100 km/h gyorsulás mindössze 5 másodperc körül alakult.
-                </p>
-                <p class="card-text">
-                    Az Impreza WRX STI GC8 ikonikus AWD hajtásrendszere biztosította a maximális tapadást, amely
-                    lehetővé tette a gyors és precíz kormányzást bármilyen útfelületen. Az autó alvázát és
-                    felfüggesztését is úgy tervezték, hogy tökéletesen kezelhető és agilis legyen, akár versenypályán,
-                    akár aszfalton. Az EJ20 motor mellett az autó híres volt a szoros 5 sebességes manuális váltójáról,
-                    amely lehetővé tette a vezető számára, hogy teljes mértékben kihasználja a motor erejét. A Recaro
-                    ülések, az AP Racing fékrendszer és a Bilstein felfüggesztés mind hozzájárultak a
-                    versenyképességhez, és az autó imázsát is igazi sportautóvá formálták.
-                </p>
+                <article>
+                    <h2 class="card-title">Subaru Impreza WRX STI(GC8)</h2>
+                    <!--Text-->
+                    <p class="card-text">
+                        A Subaru Impreza WRX STI (GC8) egy másik kultikus JDM modell, amely szintén kiemelkedő
+                        szereplője
+                        volt a ralisportnak és a japán autók szerelmeseinek. Az Impreza WRX STI a 1992-es debütálás után
+                        vált világszerte ismertté, és az 1990-es évek végén és 2000-es évek elején a rali világbajnokság
+                        egyik meghatározó szereplőjévé vált. A GC8 változat különösen az STI verziójával vált
+                        legendássá,
+                        amely rendkívüli összkerékhajtású rendszerével és az erőteljes motorral igazi ralisport-élményt
+                        nyújtott. Az autó szívét egy 2.0 literes turbós 4-hengeres motor adta, amely körülbelül 280
+                        lóerőt
+                        és 353 Nm nyomatékot biztosított, így a 0-100 km/h gyorsulás mindössze 5 másodperc körül
+                        alakult.
+                    </p>
+                    <p class="card-text">
+                        Az Impreza WRX STI GC8 ikonikus AWD hajtásrendszere biztosította a maximális tapadást, amely
+                        lehetővé tette a gyors és precíz kormányzást bármilyen útfelületen. Az autó alvázát és
+                        felfüggesztését is úgy tervezték, hogy tökéletesen kezelhető és agilis legyen, akár
+                        versenypályán,
+                        akár aszfalton. Az EJ20 motor mellett az autó híres volt a szoros 5 sebességes manuális
+                        váltójáról,
+                        amely lehetővé tette a vezető számára, hogy teljes mértékben kihasználja a motor erejét. A
+                        Recaro
+                        ülések, az AP Racing fékrendszer és a Bilstein felfüggesztés mind hozzájárultak a
+                        versenyképességhez, és az autó imázsát is igazi sportautóvá formálták.
+                    </p>
+                </article>
                 <!--Table-->
                 <div class="d-flex justify-content-center container-fluid">
                     <table class="table table-bordered align-middle">
-                        <caption>Az autó főbb adatai</caption>
+                        <caption>Az autó főbb adatai
+                            <details>
+                                <summary class="fw-bold">További információ</summary>
+                                <p>
+                                    Adatok az autó motorjáról, tejesítményéről, nyomatékjáról és maximális
+                                    fordulatszámáról
+                                </p>
+                            </details>
+                        </caption>
                         <tr>
                             <th>Motor</th>
                             <td>
@@ -456,12 +598,13 @@
                         </tr>
                     </table>
                 </div>
-                <!-- Nav btns -->
+                <!-- More Text -->
                 <p class="card-text">
                     A Subaru Impreza WRX nemcsak a ralisportban szerzett komoly sikereket, hanem a Mitsubishi Lancer
                     Evolution riválisaként az autósport iránti elkötelezettség és a JDM kultúra egyik legismertebb
                     autójává vált
                 </p>
+                <!-- Nav btns -->
                 <a href="#evo" class="btn btn-danger">
                     <i class="bi bi-arrow-left"></i> Előző
                 </a>
@@ -469,25 +612,31 @@
         </div>
     </div>
     <!-- Scroll to top btn -->
-    <button id="scrollTopBtn" class="btn btn-danger position-fixed">
-        <i class="bi bi-arrow-up"></i>
-    </button>
+    <aside>
+        <button id="scrollTopBtn" class="btn btn-danger position-fixed">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </aside>
+    <!-- Footer -->
+    <footer>
+        Készítette: Donkó Hunor Attila
+    </footer>
     <!-- Javascript for scroll to top btn -->
     <script>
         const scrollTopBtn = document.getElementById("scrollTopBtn");
-      
+
         window.onscroll = () => {
-          if (document.documentElement.scrollTop > 200) {
-            scrollTopBtn.style.display = "block";
-          } else {
-            scrollTopBtn.style.display = "none";
-          }
+            if (document.documentElement.scrollTop > 200) {
+                scrollTopBtn.style.display = "block";
+            } else {
+                scrollTopBtn.style.display = "none";
+            }
         };
-      
+
         scrollTopBtn.onclick = () => {
-          window.scrollTo({ top: 0, behavior: "smooth" });
+            window.scrollTo({ top: 0, behavior: "smooth" });
         };
-      </script>           
+    </script>
 </body>
 
 </html>
